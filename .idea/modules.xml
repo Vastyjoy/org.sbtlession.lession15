@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SchoolChatClient/SchoolChatClient.iml" filepath="$PROJECT_DIR$/SchoolChatClient/SchoolChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SchoolChatServer/SchoolChatServer.iml" filepath="$PROJECT_DIR$/SchoolChatServer/SchoolChatServer.iml" />
+    </modules>
+  </component>
+</project>
