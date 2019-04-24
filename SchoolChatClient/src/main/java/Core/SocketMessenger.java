@@ -6,11 +6,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SocketMessenger implements Messenger {
-    String userName;
-    Socket socket;
-    ObjectInputStream objectInputStream;
-    ObjectOutputStream objectOutputStream;
-    boolean isAutorize = false;
+    private String userName;
+    private Socket socket;
+    private ObjectInputStream objectInputStream;
+    private ObjectOutputStream objectOutputStream;
 
 
     public SocketMessenger(String userName, Socket socket) throws IOException {
@@ -37,9 +36,8 @@ public class SocketMessenger implements Messenger {
     }
 
     private void sendMessage(Message message) {
-        Message recvMsg = null;
         try {
-            objectOutputStream.writeObject(message);
+             objectOutputStream.writeObject(message);
         } catch (IOException e) {
             e.printStackTrace();
         }

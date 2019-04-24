@@ -9,12 +9,12 @@ import java.net.Socket;
 import java.util.LinkedList;
 
 public class ClientThread extends Thread {
-    String userName;
-    Socket socket;
-    MsgBase msgBase;
-    ObjectInputStream objectInputStream;
-    ObjectOutputStream objectOutputStream;
-    static final String systemUser="system";
+    private String userName;
+    private Socket socket;
+    private MsgBase msgBase;
+    private ObjectInputStream objectInputStream;
+    private ObjectOutputStream objectOutputStream;
+    private static final String systemUser="system";
 
     public ClientThread(Socket socket, MsgBase msgBase) throws IOException {
         this.socket = socket;
